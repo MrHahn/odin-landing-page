@@ -5,10 +5,37 @@
     font-family: sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 10px;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
 .container {
     width: 100%;
-    max-width: 1800px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px
+}
+
+.button {
+    background: #3882f6;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.button-hollow{
+    border: 2px solid white;
+    color:white;
 }
 
 header .inner-wrap {
@@ -23,8 +50,16 @@ header {
     color: white;
 }
 
+nav.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 header nav a {
     color: white;
+    text-decoration: none;
 }
 
 h2.logo {
@@ -54,4 +89,100 @@ section.hero {
 .hero p {
     font-size: 18px;
     color: #e5e7eb;
+}
+
+section.ctas {
+    text-align: center;
+    margin: 40px 0;
+}
+
+section.ctas h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+.cta-wrap {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 33px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cta-item {
+    text-decoration: none;
+    color: #1f2937;
+    flex-basis: 22%;
+}
+
+.cta-item .box {
+    height: 200px;
+    width: 200px;
+    border: 3px solid #3882f6;
+    margin: 0 auto;
+    border-radius: 13px;
+    margin-bottom: 10px;
+}
+
+section.quote {
+    background: #e5e7eb;
+    padding: 150px 0;
+}
+
+section.quote p.quote {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1f2937;
+}
+
+p.author {
+    text-align: right;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+section.sign-up {
+    padding: 90px 0;
+}
+
+section.sign-up .inner-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #3882f6;
+    padding: 50px 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+.sign-up h5 {
+    font-size: 25px;
+}
+
+.sign-up p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+footer {
+    background: #1f2937;
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    header .inner-wrap,
+    .hero .inner-wrap,
+    section.sign-up .inner-wrap{
+        flex-direction: column;
+    }
+    section.sign-up .inner-wrap {
+        text-align: center;
+    }
 }
